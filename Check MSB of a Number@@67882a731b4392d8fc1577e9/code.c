@@ -2,7 +2,8 @@
 int main(){
     int a;
     scanf("%d", &a);
-    if (a ^ 1){
+    int mask = 1 << 32;
+    if (a & mask){
         printf("Set");
     }
     else{
