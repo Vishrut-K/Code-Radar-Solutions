@@ -1,17 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    scanf("%d", &n);
+    int num, i, isPrime = 1;
+    scanf("%d", &num);
 
-    if (n==1) {
-        printf("Not Prime");}
-    else if (n==2) {
-        printf("Prime");
-    } else if (n%1==0 && n%n==0 && n%2!=0 && n%3!=0 && n%5!=0 && n%7!=0 && n%11!=0) {
-        printf("Prime");
+    if (num <= 1) {
+        isPrime = 0;  // Numbers less than or equal to 1 are not prime
+    } else {
+        for (i = 2; i < num; i++) {
+            if (num % i == 0) {
+                isPrime = 0;  // Found a divisor, not a prime number
+                break;
+            }
+        }
     }
-    else {
+
+    if (isPrime == 1) {
+        printf("Prime");
+    } else {
         printf("Not Prime");
     }
 
