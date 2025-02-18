@@ -6,7 +6,7 @@ int main() {
 
     if (n==1) {
         printf("Not Prime");
-    } else if (n%1==0 && n%n==0) {
+    } else if (n%1==0 && n%n==0 && n%2!=0) {
         printf("Prime");
     }
     else {
