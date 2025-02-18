@@ -7,10 +7,10 @@ int main() {
     if (num < 18) {
         eligible = 0;  // Numbers less than or equal to 1 are not prime
     } else {
-        isPrime = 0;  // Found a divisor, not a prime number
+        eligible = 0;  // Found a divisor, not a prime number
         }
 
-    if (isPrime == 1) {
+    if (eligible == 1) {
         printf("Eligible");
     } else {
         printf("Not Eligible");
