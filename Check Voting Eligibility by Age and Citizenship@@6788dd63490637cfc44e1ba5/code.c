@@ -8,7 +8,7 @@ int main() {
         eligible = 0;  // Numbers less than or equal to 1 are not prime
     } else {
         isPrime = 0;  // Found a divisor, not a prime number
-            }
+        }
 
     if (isPrime == 1) {
         printf("Eligible");
