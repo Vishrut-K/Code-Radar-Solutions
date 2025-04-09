@@ -19,5 +19,5 @@ int main() {
     }
 
     printf("Sorted\n");  // If loop completes, it's sorted
-    return 0;
+    return 0;
 }
